@@ -1,0 +1,38 @@
+.nav {
+  grid-area: n;
+  display: grid;
+  background-color: #ffffff;
+  margin-left: 7px;
+  padding: 20px;
+  grid-row-gap: 100px;
+  grid-template-areas:
+  "nu"
+  "df";
+  grid-template-rows: 15fr 30fr;
+  grid-template-columns: 1fr;
+  border: 2px solid #ebf0f6;
+  width: 200px;
+
+}
+
+.displayFriends {
+  grid-area: df;
+  color: #b1b6ce;
+}
+
+.navUp {
+  grid-area: nu;
+}
+
+.item {
+  color: #b1b6ce;
+  padding-top: 10px;
+}
+
+.item a {
+  color: #b1b6ce;
+}
+
+.item a.activeLink {
+  color: #fe5e39;
+}

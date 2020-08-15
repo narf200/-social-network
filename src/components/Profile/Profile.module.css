@@ -1,0 +1,15 @@
+.profileItems {
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 2px solid #ebf0f6;
+
+}
+
+.background{
+    background-size: contain;
+}
+
+.background img {
+    width: 1100px;
+    height: 270px;
+}

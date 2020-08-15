@@ -1,0 +1,14 @@
+.message {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas:
+  "a m";
+}
+
+s.avatar {
+    grid-area: a;
+}
+
+s.message {
+    grid-area: m;
+}

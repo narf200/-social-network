@@ -1,0 +1,26 @@
+.DisplayFriendsItems {
+    grid-area: dfi;
+    background-color: #ffffff;
+    padding: 20px;
+    border-top: 2px solid #ebf0f6;
+    width: 100%;
+    height: 100%;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.DisplayFriendsItems img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 12px;
+}
+
+.avatar {
+
+}
+
+.name {
+
+}

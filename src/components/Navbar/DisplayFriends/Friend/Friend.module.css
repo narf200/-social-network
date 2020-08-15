@@ -1,0 +1,23 @@
+.friendItem {
+    grid-area: fr;
+    display: grid;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    grid-row-gap: 50px;
+    grid-template-areas:
+    "a n";
+    grid-template-rows: 20px;
+    grid-template-columns: 60px 1fr;
+    border: 2px solid #ebf0f6;
+}
+
+.name {
+    grid-area: n;
+}
+
+.avatar {
+    grid-area: a;
+}
+
