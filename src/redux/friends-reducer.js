@@ -18,8 +18,8 @@ let initialState =  {
         },
         {
             id: 5,
-            avatar: 'https://pbs.twimg.com/profile_images/1053159168197111808/8eipWrau_400x400.jpg',
-            name: 'Cara'
+            avatar: 'https://pbs.twimg.com/profile_images/1244678697564553220/4u7DvR7X_400x400.jpg',
+            name: 'Minko Gechev'
         },
         {
             id: 6,

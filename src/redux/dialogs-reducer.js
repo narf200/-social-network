@@ -1,4 +1,3 @@
-const UPDATE_NEW_MESSAGE_BODY = 'UPDATE_NEW_MESSAGE_BODY';
 const SEND_MESSAGE = 'SEND-MESSAGE';
 
 let initialState = {
@@ -21,8 +20,8 @@ let initialState = {
         },
         {
             id: 5,
-            avatar: 'https://pbs.twimg.com/profile_images/1053159168197111808/8eipWrau_400x400.jpg',
-            name: 'Cara'
+            avatar: 'https://pbs.twimg.com/profile_images/1244678697564553220/4u7DvR7X_400x400.jpg',
+            name: 'Minko Gechev'
         },
         {
             id: 6,
@@ -61,23 +60,15 @@ let initialState = {
             id: 7,
             message: 'Mbm'
         }
-    ],
-    newMessageBody: ""
-
+    ]
 }
 
 const dialogsReducer = (state = initialState, action) => {
     switch (action.type) {
-        case UPDATE_NEW_MESSAGE_BODY:
-            return {
-                ...state,
-                newMessageBody: action.body
-            }
         case SEND_MESSAGE:
-            let body = state.newMessageBody
+            let body = action.newMessageBody
              return {
                 ...state,
-                newMessageBody: '',
                 messages: [...state.messages, {id: 8, message: body}]
             }
         default:
@@ -86,7 +77,6 @@ const dialogsReducer = (state = initialState, action) => {
 
 }
 
-export const sendMessageCreator = () => ({type: SEND_MESSAGE})
-export const updateNewMessageBodyCreator = (body) => ({type: UPDATE_NEW_MESSAGE_BODY, body: body})
+export const sendMessageCreator = (newMessageBody) => ({type: SEND_MESSAGE, newMessageBody})
 
 export default dialogsReducer;

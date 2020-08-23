@@ -4,12 +4,13 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import MyPostsContainer from "./MyPosts/MyPostsContainer";
 
 const Profile = (props) => {
+
     return (
         <div className={s.profileItems}>
             <div className={s.background}>
                 <img src="https://fab-rides.co.uk/wp-content/uploads/2017/10/Immage-8-Dolomites.jpg" alt=""/>
             </div>
-            <ProfileInfo profile={props.profile}/>
+            <ProfileInfo profile={props.profile} status={props.status} updateStatus={props.updateStatus}/>
             <MyPostsContainer likesCount='5'/>
         </div>
     );

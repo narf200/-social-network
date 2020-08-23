@@ -1,6 +1,4 @@
-import {authMeAPI, followAPI, profileAPI, unfollowAPI, usersAPI} from "../api/api";
-import {setUserProfile} from "./profile-reducer";
-import {setAuthUserData} from "./auth-reducer";
+import { followAPI, unfollowAPI, usersAPI} from "../api/api";
 
 const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
